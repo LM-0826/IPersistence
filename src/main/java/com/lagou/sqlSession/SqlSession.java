@@ -14,5 +14,14 @@ public interface SqlSession {
     //为Dao接口生成代理实现类
     public <T> T getMapper(Class<?> mapperClass);
 
+    // 添加实体
+    public int insert (String statementid,Object... params) throws Exception;
+
+    // 删除实体
+    public int delete (String statementid,Object... params) throws Exception;
+
+    // 修改实体
+    public int update (String statementid,Object... params) throws Exception;
+
 
 }
